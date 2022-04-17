@@ -90,7 +90,9 @@ selectedCityForm.onsubmit = (e) => {
         <li>Feels like: ${feelsLike}&#8457</li>
         <li>The high today is: ${highTemp}&#8457</li>
         <li>The low today is: ${lowTemp}&#8457</li>
+        <button type="reset">Try a new city</button>
         </ul>
         `;
+        document.querySelector('button[type=reset]').addEventListener('click', ()=>{window.location.reload()});
     })
 }
